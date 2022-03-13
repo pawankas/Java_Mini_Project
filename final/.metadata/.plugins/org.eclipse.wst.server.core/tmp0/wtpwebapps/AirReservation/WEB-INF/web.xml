@@ -12,7 +12,10 @@
 		<servlet-name>FlightControllerServlet</servlet-name>
 		<servlet-class>com.cybage.FlightControllerServlet</servlet-class>
 	</servlet>
-
+	<servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>com.cybage.controller.UserServlet</servlet-class>
+	</servlet>
 
 	<error-page>
 		<exception-type>java.lang.Exception</exception-type>
