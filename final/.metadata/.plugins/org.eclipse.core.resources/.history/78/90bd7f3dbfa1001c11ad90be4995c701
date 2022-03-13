@@ -1,0 +1,24 @@
+package com.cybage.dao;
+
+import java.sql.*;  
+
+public class LoginDao {  
+public static boolean validate(String emailid,String password){  
+boolean status=false;  
+try{  
+Class.forName("com.mysql.jdbc.Driver");  
+Connection con=DriverManager.getConnection(  
+		"jdbc:mysql://localhost:3306/airlinereservationsystem?useSSL=false", "root", "root");  
+      
+PreparedStatement ps=con.prepareStatement(  
+"select * from user where emailid=? and password=?");  
+ps.setString(1,emailid);  
+ps.setString(2,password);  
+      
+ResultSet rs=ps.executeQuery();  
+status=rs.next();  
+          
+}catch(Exception e){System.out.println(e);}  
+return status;  
+}  
+} 

@@ -1,0 +1,142 @@
+package com.cybage.dao;
+
+import java.util.*;
+
+import com.cybage.model.Flight;
+
+import java.sql.*;  
+  
+public class FlightDao {
+    private String jdbcURL = "jdbc:mysql://localhost:3306/airlinereservationsystem?useSSL=false";
+    private String jdbcUsername = "root";
+    private String jdbcPassword = "root";
+
+    private static final String INSERT_FLIGHT_SQL =  "insert into flight(flightId,flightName,flightNumber ,destination ,noOfStops) values (?, ?,?,?,?)";  
+    private static final String SELECT_FLIGHT_BY_ID = "select flightId ,flightName ,flightNumber ,destination , noOfStops  from flight where flightId =?";
+    private static final String SELECT_ALL_FLIGHTS = "select * from flight";
+    private static final String DELETE_FLIGHT_SQL = "delete from flight where flightId = ?;";
+//    private static final String UPDATE_USERS_SQL = "update users set name = ?,email= ?, country =? where id = ?;";
+
+    public FlightDao() {}
+
+    protected Connection getConnection() {
+        Connection connection = null;
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return connection;
+    }
+
+    public void insertFlight(Flight flight) throws SQLException {
+        System.out.println(INSERT_FLIGHT_SQL);
+        // try-with-resource statement will auto close the connection.
+        try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(INSERT_FLIGHT_SQL)) {
+        	preparedStatement.setInt(1, flight.getFlightId());
+        	preparedStatement.setString(2,flight.getFlightName());  
+        	preparedStatement.setString(3,flight.getFlightNumber());  
+        	preparedStatement.setString(4,flight.getDestination());  
+        	preparedStatement.setString(5,flight.getNoOfStops());  
+              
+            preparedStatement.executeUpdate();  
+              
+            connection.close();  
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
+    } 
+    
+    public List < Flight > selectAllFlights() {
+    	Statement st;
+        // using try-with-resources to avoid closing resources (boiler plate code)
+        List < Flight > flight = new ArrayList < > ();
+        // Step 1: Establishing a Connection
+        try (Connection connection = getConnection();
+        	
+            // Step 2:Create a statement using connection object
+            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_FLIGHTS);) {
+            System.out.println(preparedStatement);
+            // Step 3: Execute the query or update query
+            ResultSet rs = preparedStatement.executeQuery();
+
+            // Step 4: Process the ResultSet object.
+            while (rs.next()) {
+            	st = connection.createStatement();
+            	Flight flight1 = new Flight();
+            	flight1.setFlightId(rs.getInt("flightId"));
+            	flight1.setFlightName(rs.getString("flightName"));
+            	flight1.setFlightNumber(rs.getString("flightNumber"));
+            	flight1.setDestination(rs.getString("destination"));
+            	flight1.setNoOfStops(rs.getString("noOfStops"));
+//                int flightId = rs.getInt("flightId");
+//                String flightName = rs.getString("flightName");
+//                String flightNumber = rs.getString("flightNumber");
+//                String destination = rs.getString("destination");
+//                String noOfStops = rs.getString("noOfStops");
+            
+                flight.add(flight1);
+            }
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
+        return flight;
+    }
+    
+    public boolean deleteFlight(int flightId) throws SQLException {
+        boolean rowDeleted;
+        try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(DELETE_FLIGHT_SQL);) {
+            statement.setInt(1, flightId);
+            rowDeleted = statement.executeUpdate() > 0;
+        }
+        return rowDeleted;
+    }
+    
+    public Flight selectFlightId(int flightId) {
+    	Flight flight = null;
+        // Step 1: Establishing a Connection
+        try (Connection connection = getConnection();
+            // Step 2:Create a statement using connection object
+            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_FLIGHT_BY_ID);) {
+            preparedStatement.setInt(1, flightId);
+            System.out.println(preparedStatement);
+            // Step 3: Execute the query or update query
+            ResultSet rs = preparedStatement.executeQuery();
+
+            // Step 4: Process the ResultSet object.
+            while (rs.next()) {
+                String flightName = rs.getString("flightName");
+                String flightNumber = rs.getString("flightNumber");
+                String destination = rs.getString("destination");
+                String noOfStops = rs.getString("noOfStops");
+                
+                flight = new Flight(flightName, flightNumber, destination, noOfStops);
+            }
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
+        return user;
+    }
+    
+    private void printSQLException(SQLException ex) {
+        for (Throwable e: ex) {
+            if (e instanceof SQLException) {
+                e.printStackTrace(System.err);
+                System.err.println("SQLState: " + ((SQLException) e).getSQLState());
+                System.err.println("Error Code: " + ((SQLException) e).getErrorCode());
+                System.err.println("Message: " + e.getMessage());
+                Throwable t = ex.getCause();
+                while (t != null) {
+                    System.out.println("Cause: " + t);
+                    t = t.getCause();
+                }
+            }
+        }
+    }
+    
+}
