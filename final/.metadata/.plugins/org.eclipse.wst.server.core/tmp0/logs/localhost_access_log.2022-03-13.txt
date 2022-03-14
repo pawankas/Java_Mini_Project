@@ -100,3 +100,6 @@
 0:0:0:0:0:0:0:1 - - [13/Mar/2022:22:00:48 +0530] "GET /AirReservation/list HTTP/1.1" 404 774
 0:0:0:0:0:0:0:1 - - [13/Mar/2022:22:00:49 +0530] "GET /AirReservation/list HTTP/1.1" 404 774
 0:0:0:0:0:0:0:1 - - [13/Mar/2022:22:00:59 +0530] "GET /AirReservation/flight/list HTTP/1.1" 404 785
+127.0.0.1 - - [13/Mar/2022:22:01:15 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [13/Mar/2022:22:01:16 +0530] "GET /AirReservation/ HTTP/1.1" 200 9957
+0:0:0:0:0:0:0:1 - - [13/Mar/2022:22:01:21 +0530] "GET /AirReservation/list HTTP/1.1" 200 1656

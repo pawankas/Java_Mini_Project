@@ -33,18 +33,22 @@ public class UserLogin extends HttpServlet {
 		
 		String emailid = request.getParameter("emailid");
 		String password = request.getParameter("password");
+
 		User u=loginDao.getUser(emailid, password);
 		if(u==null) {
 			request.setAttribute("text", "Unsuccessful login");
+			RequestDispatcher rd=request.getRequestDispatcher("loginuser.jsp");
 			System.out.println("Error Login in");
 		}
 		else {
 			request.setAttribute("text", "Successful login");
-			RequestDispatcher rd=request.getRequestDispatcher("Home.jsp");
+			RequestDispatcher rd=request.getRequestDispatcher("list");
+			System.out.println("User Logged In Successfully");
+			rd.forward(request, response);
 		}
 		
-		RequestDispatcher rd=request.getRequestDispatcher("Home.jsp");
-		rd.forward(request, response);
+//		RequestDispatcher rd=request.getRequestDispatcher("Home.jsp");
+		
 		
 		System.out.println(u);
 	

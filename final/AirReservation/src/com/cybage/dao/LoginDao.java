@@ -14,11 +14,11 @@ public class LoginDao {
 	     Connection connection;
 	
 	try {
-		Class.forName("com.mysql.cj.jdbc.Driver");
+		Class.forName("com.mysql.jdbc.Driver");
 		connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/airlinereservationsystem" ,"root","root");
 	    PreparedStatement statement1= connection.prepareStatement("select * from user where emailid=? and password=?");
 	    statement1.setString(1, email);
-	    statement1.setString(2, password);	    
+	    statement1.setString(2, password);	
 	    ResultSet rs=statement1.executeQuery();
 	    
 	    while(rs.next()) {
@@ -32,6 +32,7 @@ public class LoginDao {
 	    	user.setAddress(rs.getString(7));
 	    	user.setEmailid(rs.getString(8));
 	    	user.setPassword(rs.getString(9));
+	    	user.setRole(rs.getString(10));
 	    }
 	    	
 	}
@@ -42,4 +43,6 @@ public class LoginDao {
 	return user;
 
 }
+
+
 }

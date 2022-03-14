@@ -72,6 +72,7 @@
 					<input type="text" name="address" placeholder="Address">
 					<input type="email" name="emailid" placeholder="Email"> 
 					<input type="password" name="password" placeholder="Password">
+					<input type="text" name="role"  placeholder="Role">
 					<input type="submit" value="Sign Up">
 				</form>
 			</div>
@@ -79,6 +80,9 @@
 	</div>
 
 	<!-- Footer goes here -->
+	<br>
+	<br>
+	<br>
 	<div id="footer">
 		<%@ include file="footer.jsp"%>
 	</div>

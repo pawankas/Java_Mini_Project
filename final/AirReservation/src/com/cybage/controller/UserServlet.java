@@ -36,18 +36,18 @@ public class UserServlet extends HttpServlet {
 		String address = request.getParameter("address");
 		String emailid = request.getParameter("emailid");
 		String password = request.getParameter("password");
+		String role = request.getParameter("role");
 
 		User user = new User();
 		user.setFname(fname);
-		;
 		user.setLname(lname);
-		;
 		user.setGender(gender);
 		user.setAge(age);
 		user.setContactNo(contactNo);
 		user.setAddress(address);
 		user.setEmailid(emailid);
 		user.setPassword(password);
+		user.setRole(role);
 
 		try {
 			userDao.registerUser(user);
