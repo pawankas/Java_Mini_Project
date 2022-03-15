@@ -1,0 +1,14 @@
+Drop table flight;
+
+CREATE TABLE `airlinereservationsystem`.`flight` (
+  `flightId` INT NOT NULL AUTO_INCREMENT,
+  `flightName` VARCHAR(45) NOT NULL,
+  `flightNumber` VARCHAR(45) NOT NULL,
+`source` VARCHAR(45) NOT NULL,
+  `destination` VARCHAR(45) NOT NULL,
+  `noOfStops` VARCHAR(45) NOT NULL,
+`date` VARCHAR(45)NOT NULL,
+`time` VARCHAR(45)NOT NULL,
+`price` DOUBLE NOT NULL,
+  PRIMARY KEY (`flightId`),
+  UNIQUE INDEX `flightId_UNIQUE` (`flightId` ASC) VISIBLE);
