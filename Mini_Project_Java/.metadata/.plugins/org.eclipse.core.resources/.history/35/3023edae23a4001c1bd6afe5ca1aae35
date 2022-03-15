@@ -1,0 +1,26 @@
+package com.cybage.model;
+
+public class Flight {
+	private int flightid;
+	private String flightName;
+	private String flightNumber;
+	private String source;
+	private String destination;
+	private String noOfStops;
+	private String date;
+	private String time;
+	private String Class;
+	private Double price;
+	
+	public Flight() {
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	
+	
+
+
+	
+	
+}
