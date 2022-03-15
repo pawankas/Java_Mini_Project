@@ -9,7 +9,7 @@
     <center>
         <h1>Flight Management</h1>
         <h2>
-            <a href="/new">Add New Flight</a>
+            <a href="/new.jsp">Add New Flight</a>
             &nbsp;&nbsp;&nbsp;
             <a href="/list">List All Flights</a>
              
