@@ -12,6 +12,8 @@
             <a href="new">Add New Flight</a>
             &nbsp;&nbsp;&nbsp;
             <a href="list">List All Flights</a>
+             &nbsp;&nbsp;&nbsp;
+            <a href="search.jsp">Search Flight</a>
              
         </h2>
     </center>
