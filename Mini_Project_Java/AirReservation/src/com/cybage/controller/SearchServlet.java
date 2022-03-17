@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.cybage.model.Flight;
 
-@WebServlet("/flight")
+
 public class SearchServlet extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

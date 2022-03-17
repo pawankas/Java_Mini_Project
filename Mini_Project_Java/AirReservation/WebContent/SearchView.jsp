@@ -5,10 +5,10 @@
     <head>
     </head>
     <body>
-        <table width="700px" align="center"
+        <table width="700px" align="center" border="1" cellpadding="5"
                style="border:1px solid #000000;">
             <tr>
-                <td colspan=4 align="center"
+                <td colspan=10 align="center"
                     style="background-color:teal">
                     <b>Flight Records</b></td>
             </tr>
@@ -22,10 +22,13 @@
                 <td><b>Date of Travel</b></td>
                 <td><b>Time Of Departure</b></td>
                 <td><b>Fare</b></td>
+                <td><b>Actions</b></td>
+               
             </tr>
+            
             <%
                 int count = 0;
-                String color = "#F9EBB3";
+                String color = "";
                 if (request.getAttribute("flightList") != null) {
                     ArrayList al = (ArrayList) request.getAttribute("flightList");
                     System.out.println(al);
@@ -33,7 +36,7 @@
                     while (itr.hasNext()) {
 
                         if ((count % 2) == 0) {
-                            color = "#eeffee";
+                            color = "";
                         }
                         count++;
                         ArrayList flightList = (ArrayList) itr.next();
@@ -48,8 +51,15 @@
                 <td><%=flightList.get(6)%></td>
                 <td><%=flightList.get(7)%></td>
                 <td><%=flightList.get(8)%></td>
-                
-            </tr>
+			<c:forEach var="flight" items="${FlightList}">
+				<td><a
+					href="edit?flightId=<c:out value='${flight.flightId}' />">Edit</a>
+					&nbsp;&nbsp;&nbsp;&nbsp; <a
+					href="delete?flightId=<c:out value='${flight.flightId}' />">Delete</a>
+				</td>
+			</c:forEach>
+		</tr>
+            
             <%
                     }
                 }
@@ -61,6 +71,7 @@
             </tr>
             <%            }
             %>
+            
         </table>
     </body>
 </html>

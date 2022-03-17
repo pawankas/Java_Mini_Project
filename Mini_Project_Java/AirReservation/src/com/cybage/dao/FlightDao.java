@@ -4,6 +4,7 @@ import java.util.*;
 
 import com.cybage.model.Flight;
 
+import java.io.PrintWriter;
 import java.sql.*;  
   
 public class FlightDao {
@@ -148,6 +149,8 @@ public class FlightDao {
         }
         return rowUpdated;
     }
+    
+
     
     private void printSQLException(SQLException ex) {
         for (Throwable e: ex) {

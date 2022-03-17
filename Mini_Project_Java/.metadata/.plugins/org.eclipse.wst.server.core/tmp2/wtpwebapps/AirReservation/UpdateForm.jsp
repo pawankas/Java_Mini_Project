@@ -34,7 +34,8 @@
                 </h2>
             </caption>
                 <c:if test="${flight != null}">
-                    <input type="hidden" name="flightId" value="<c:out value='${flight.flightId}' />" />
+                    <input type="hidden" name="flightId" 
+                    value="<c:out value='${flight.flightId}' />" />
                 </c:if>           
             <tr>
                 <th>Flight Name: </th>
