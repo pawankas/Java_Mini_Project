@@ -72,7 +72,7 @@
 					<input type="text" name="address" placeholder="Address">
 					<input type="email" name="emailid" placeholder="Email"> 
 					<input type="password" name="password" placeholder="Password">
-					<input type="text" name="role"  disabled="disabled" placeholder="User">
+	
 					<input type="submit" value="Sign Up">
 				</form>
 			</div>

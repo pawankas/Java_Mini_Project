@@ -32,7 +32,7 @@ public class LoginDao {
 	    	user.setAddress(rs.getString(7));
 	    	user.setEmailid(rs.getString(8));
 	    	user.setPassword(rs.getString(9));
-	    	user.setRole(rs.getString(10));
+	    
 	    }
 	    	
 	}

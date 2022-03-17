@@ -10,14 +10,14 @@ public class User {
 	private String address;
 	private String emailid;
 	private String password;
-	private String role;
+	
 	
 	public User() {
 		// TODO Auto-generated constructor stub
 	}
 
 	public User(int pid, String fname, String lname, String gender, int age, String contactNo, String address,
-			String emailid, String password, String role) {
+			String emailid, String password) {
 		super();
 		this.pid = pid;
 		this.fname = fname;
@@ -28,7 +28,7 @@ public class User {
 		this.address = address;
 		this.emailid = emailid;
 		this.password = password;
-		this.role = role;
+	
 	}
 
 	public int getPid() {
@@ -103,20 +103,15 @@ public class User {
 		this.password = password;
 	}
 
-	public String getRole() {
-		return role;
-	}
-
-	public void setRole(String role) {
-		this.role = role;
-	}
-
 	@Override
 	public String toString() {
 		return "User [pid=" + pid + ", fname=" + fname + ", lname=" + lname + ", gender=" + gender + ", age=" + age
 				+ ", contactNo=" + contactNo + ", address=" + address + ", emailid=" + emailid + ", password="
-				+ password + ", role=" + role + "]";
+				+ password + "]";
 	}
+
+
+
 
 	
 	

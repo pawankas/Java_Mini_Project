@@ -12,8 +12,8 @@ public class UserDao {
 
     public int registerUser(User user) throws ClassNotFoundException {
         String INSERT_USER_SQL = "INSERT INTO user" +
-            "  (pid, fname, lname, gender, age,contactNo,address, emailid, password, role) VALUES " +
-            " (?, ?, ?, ?, ?, ?, ?, ? , ? , ?)";
+            "  (pid, fname, lname, gender, age,contactNo,address, emailid, password) VALUES " +
+            " (?, ?, ?, ?, ?, ?, ?, ? , ? )";
 
         int result = 0;
 
@@ -33,7 +33,7 @@ public class UserDao {
             preparedStatement.setString(7, user.getAddress());
             preparedStatement.setString(8, user.getEmailid());
             preparedStatement.setString(9, user.getPassword());
-            preparedStatement.setString(10, user.getRole());
+         
             
     
 

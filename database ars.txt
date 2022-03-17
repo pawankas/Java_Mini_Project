@@ -1,6 +1,6 @@
 Drop table flight;
 
-CREATE TABLE `flight_reservation`.`user` (
+CREATE TABLE `airlinereservationsystem`.`user` (
   `pid` INT NOT NULL AUTO_INCREMENT,
   `fname` VARCHAR(45) NOT NULL,
   `lname` VARCHAR(45) NOT NULL,
