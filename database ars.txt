@@ -13,4 +13,21 @@ CREATE TABLE `airlinereservationsystem`.`flight` (
   PRIMARY KEY (`flightId`),
   UNIQUE INDEX `flightId_UNIQUE` (`flightId` ASC) VISIBLE);
   
+  
+  User u = loginDao.getUser(emailid, password);
+		if (u == null) {
+			request.setAttribute("text", "Unsuccessful login");
+			RequestDispatcher rd = request.getRequestDispatcher("loginuser.jsp");
+			System.out.println("Error Login in");
+		} else if (u.getEmailid().equals("harshad@gmail.com") && u.getPassword().equals("1234")) {
+			request.setAttribute("text", "Successful login");
+			RequestDispatcher rd = request.getRequestDispatcher("Home.jsp");
+			System.out.println("Admin Logged In Successfully");
+			rd.forward(request, response);
+		} else  {
+			request.setAttribute("text", "Successful login");
+			RequestDispatcher rd = request.getRequestDispatcher("list");
+			System.out.println("User Logged In Successfully");
+			rd.forward(request, response);
+
 

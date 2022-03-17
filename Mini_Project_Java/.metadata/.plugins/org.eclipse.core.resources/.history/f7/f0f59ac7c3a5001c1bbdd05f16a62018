@@ -13,6 +13,9 @@ import javax.servlet.http.HttpSession;
 import com.cybage.dao.LoginDao;
 import com.cybage.model.User;
 
+/**
+ * Servlet implementation class LoginServlet
+ */
 @WebServlet("/Login")
 public class UserLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;

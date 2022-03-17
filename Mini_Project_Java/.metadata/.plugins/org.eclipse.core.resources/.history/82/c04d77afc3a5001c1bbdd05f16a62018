@@ -18,6 +18,13 @@ import com.cybage.dao.FlightDao;
 import com.cybage.model.Flight;
 
 
+/**
+ * ControllerServlet.java
+ * This servlet acts as a page controller for the application, handling all
+ * requests from the user.
+ * @email Ramesh Fadatare
+ */
+
 @WebServlet("/")
 public class FlightControllerServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;

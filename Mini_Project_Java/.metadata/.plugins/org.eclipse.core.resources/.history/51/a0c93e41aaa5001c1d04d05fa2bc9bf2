@@ -18,6 +18,13 @@ import com.cybage.dao.FlightDao;
 import com.cybage.model.Flight;
 
 
+/**
+ * ControllerServlet.java
+ * This servlet acts as a page controller for the application, handling all
+ * requests from the user.
+ * @email Ramesh Fadatare
+ */
+
 @WebServlet("/")
 public class FlightControllerServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
@@ -80,7 +87,7 @@ public class FlightControllerServlet extends HttpServlet {
     throws SQLException, ServletException, IOException {
         int flightId = Integer.parseInt(request.getParameter("flightId"));
         Flight existingFlight = flightDao.selectFlight(flightId);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("UpdateForm.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("FlightForm.jsp");
         request.setAttribute("flight", existingFlight);
         dispatcher.forward(request, response);
 
@@ -101,7 +108,7 @@ public class FlightControllerServlet extends HttpServlet {
         response.sendRedirect("list");
     }
 
-    private void updateFlight(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    private void updateFlight(HttpServletRequest request, HttpServletResponse response) {
         try {
 			int flightId  = Integer.parseInt(request.getParameter("flightId"));
 			String flightName = request.getParameter("flightName");

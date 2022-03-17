@@ -15,7 +15,7 @@ public class FlightDao {
     private static final String SELECT_FLIGHT_BY_ID = "select flightId,flightName,flightNumber ,source, destination, noOfStops, date, time, price  from flight where flightId =?";
     private static final String SELECT_ALL_FLIGHTS = "select * from flight";
     private static final String DELETE_FLIGHT_SQL = "delete from flight where flightId = ?;";
-    private static final String UPDATE_FLIGHT_SQL = "update flight set flightName = ?,flightNumber= ?,source = ?, destination = ?, noOfStops=?, date = ? ,time = ?, price = ? where flightId = ?;";
+    private static final String UPDATE_FLIGHT_SQL = "update flight set flightName = ?,flightNumber= ?,source = ?, destination = ?, noOfStops=?, date = ? ,time = ?, price = ? where flightId = ?";
 
     public FlightDao() {}
 
