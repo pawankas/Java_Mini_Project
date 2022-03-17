@@ -3597,3 +3597,375 @@ java.lang.IllegalArgumentException: Illegal value: -1
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-16 13:21:53.818
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.XWPubCqB => OK
+!SESSION 2022-03-17 09:20:40.095 -----------------------------------------------
+eclipse.buildId=4.8.1.202010230733
+java.version=15
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.select.enclosing'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.select.enclosing'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.select.next'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.select.next'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.select.previous'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.select.previous'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.select.last'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.select.last'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.source.quickMenu'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.source.quickMenu'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.add.import'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.organize.imports'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.refactor.quickMenu'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.refactor.quickMenu'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.rename.element'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.rename.element'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.move.element'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.move.element'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.modify.method.parameters'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.modify.method.parameters'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.inline'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.inline'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.extract.method'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.extract.method'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.extract.local.variable'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.extract.local.variable'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.open.hierarchy'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.TypeHierarchy'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.TypeHierarchy'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.PackageExplorer'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.PackageExplorer'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.837
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.SourceView'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.840
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.SourceView'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.840
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.JavadocView'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-17 09:21:29.840
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.JavadocView'
+
+!ENTRY org.eclipse.jface 2 0 2022-03-17 09:21:34.311
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-17 09:21:34.311
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@47f416d0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@21be80f6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:21:51.584
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:21:51.587
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7fbb3144[org.springframework.tooling.boot.ls:1.23.0.202010230633(id=673)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:21:51.596
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:21:54.439
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-17 09:22:08.805
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\pawankas'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:22:32.372
+!MESSAGE Boot LS startup time from start to initialized: 40755ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:22:34.539
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.YGKRfJSDisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:22:34.544
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:22:34.548
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:22:34.551
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:22:34.556
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:22:34.558
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.YGKRfJSD => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:22:34.561
+!MESSAGE classpath=45 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:22:34.564
+!MESSAGE buffering callback sts4.classpath.YGKRfJSD AirReservation false 45
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:22:34.567
+!MESSAGE executing callback sts4.classpath.YGKRfJSD 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:22:34.590
+!MESSAGE executing callback sts4.classpath.YGKRfJSD SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:23:01.435
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:23:01.446
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:23:58.920
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:23:58.924
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.ui 2 2 2022-03-17 09:24:03.364
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:24:11.491
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:24:11.521
+!MESSAGE classpath=45 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:24:11.550
+!MESSAGE buffering callback sts4.classpath.YGKRfJSD AirReservation false 45
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:24:11.553
+!MESSAGE executing callback sts4.classpath.YGKRfJSD 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:24:11.582
+!MESSAGE executing callback sts4.classpath.YGKRfJSD SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:24:36.860
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:24:36.970
+!MESSAGE classpath=45 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:24:37.428
+!MESSAGE buffering callback sts4.classpath.YGKRfJSD AirReservation false 45
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:24:37.856
+!MESSAGE executing callback sts4.classpath.YGKRfJSD 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:24:38.244
+!MESSAGE executing callback sts4.classpath.YGKRfJSD SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:24:41.125
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:24:41.584
+!MESSAGE classpath=45 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:24:41.609
+!MESSAGE buffering callback sts4.classpath.YGKRfJSD AirReservation false 45
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:24:41.636
+!MESSAGE executing callback sts4.classpath.YGKRfJSD 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:24:41.662
+!MESSAGE executing callback sts4.classpath.YGKRfJSD SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:24:43.707
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:24:43.713
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:24:43.721
+!MESSAGE The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:24:43.730
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-03-17 09:24:52.730
+!MESSAGE Could not download sources for jstl:jstl:1.2
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact jstl:jstl:jar:sources:1.2
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:804)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:772)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:749)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:330)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:304)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:269)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing jstl:jstl:jar:sources:1.2
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-03-17 09:24:52.730
+!MESSAGE Could not resolve artifact jstl:jstl:jar:sources:1.2
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-03-17 09:24:52.730
+!MESSAGE Missing jstl:jstl:jar:sources:1.2
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-03-17 09:24:55.250
+!MESSAGE Could not download javadoc for jstl:jstl:1.2
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact jstl:jstl:jar:javadoc:1.2
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:804)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:772)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:749)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:330)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:316)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:269)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing jstl:jstl:jar:javadoc:1.2
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-03-17 09:24:55.250
+!MESSAGE Could not resolve artifact jstl:jstl:jar:javadoc:1.2
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-03-17 09:24:55.250
+!MESSAGE Missing jstl:jstl:jar:javadoc:1.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:25:00.744
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:25:00.749
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:25:18.604
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:25:18.687
+!MESSAGE classpath=45 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:25:18.707
+!MESSAGE buffering callback sts4.classpath.YGKRfJSD AirReservation false 45
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:25:18.710
+!MESSAGE executing callback sts4.classpath.YGKRfJSD 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-17 09:25:18.717
+!MESSAGE executing callback sts4.classpath.YGKRfJSD SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:25:19.708
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:25:19.787
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:26:51.477
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:26:51.482
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:27:08.846
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:27:08.850
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:27:12.112
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:27:12.117
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:28:38.430
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:28:38.434
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:29:25.933
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:29:25.940
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:29:40.645
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:29:40.649
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:30:45.804
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:30:45.833
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:31:47.907
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:31:47.911
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:33:26.212
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:33:26.215
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:33:38.820
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:33:38.826
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:33:47.131
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-17 09:33:47.136
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!

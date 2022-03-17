@@ -17,7 +17,7 @@ public class UserDao {
 
         int result = 0;
 
-        Class.forName("com.mysql.jdbc.Driver");
+        Class.forName("com.mysql.cj.jdbc.Driver");
 
         try (Connection connection = DriverManager
             .getConnection("jdbc:mysql://localhost:3306/airlinereservationsystem?useSSL=false", "root", "P9637333109k@");

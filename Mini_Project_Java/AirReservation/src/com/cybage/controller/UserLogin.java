@@ -19,40 +19,43 @@ import com.cybage.model.User;
 @WebServlet("/Login")
 public class UserLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher rd=request.getRequestDispatcher("loginuser.jsp");
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		RequestDispatcher rd = request.getRequestDispatcher("loginuser.jsp");
 		rd.forward(request, response);
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		LoginDao loginDao = new LoginDao();
-		
+
 		String emailid = request.getParameter("emailid");
 		String password = request.getParameter("password");
 
-		User u=loginDao.getUser(emailid, password);
-		if(u==null) {
+		User u = loginDao.getUser(emailid, password);
+		if (u == null) {
 			request.setAttribute("text", "Unsuccessful login");
-			RequestDispatcher rd=request.getRequestDispatcher("loginuser.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("loginuser.jsp");
 			System.out.println("Error Login in");
-		}
-		else  {
+		} else if (u.getEmailid().equals("pawan@gmail.com") && u.getPassword().equals("1234")) {
 			request.setAttribute("text", "Successful login");
-			RequestDispatcher rd=request.getRequestDispatcher("list");
+			RequestDispatcher rd = request.getRequestDispatcher("list");
+			System.out.println("Admin Logged In Successfully");
+			rd.forward(request, response);
+			System.out.println(u);
+		} else {
+			request.setAttribute("text", "Successful login");
+			RequestDispatcher rd = request.getRequestDispatcher("Home.jsp");
 			System.out.println("User Logged In Successfully");
 			rd.forward(request, response);
+			System.out.println(u);
+
 		}
-		
-//		RequestDispatcher rd=request.getRequestDispatcher("Home.jsp");
-		
-		
-		System.out.println(u);
-	
-		
 	}
 
 }
