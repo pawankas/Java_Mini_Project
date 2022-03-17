@@ -55,8 +55,8 @@
 		<div class="white-panel">
 			<div class="login-show">
 				<h2>LogIn</h2>
-				<form action="login" method="post">
-					<input type="emailid" name="email" placeholder="Emailid"> 
+				<form action="<%=request.getContextPath()%>/Login" method="post">
+					<input type="email" name="emailid" placeholder="Emailid"> 
 					<input type="password" name="password" placeholder="Password"> 
 					<input type="submit" value="Login">
 				</form>
@@ -72,7 +72,7 @@
 					<input type="text" name="address" placeholder="Address">
 					<input type="email" name="emailid" placeholder="Email"> 
 					<input type="password" name="password" placeholder="Password">
-					<input type="text" name="role"  placeholder="Role">
+					<input type="text" name="role"  disabled="disabled" placeholder="User">
 					<input type="submit" value="Sign Up">
 				</form>
 			</div>

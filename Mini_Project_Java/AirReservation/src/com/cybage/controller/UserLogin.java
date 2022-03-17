@@ -23,10 +23,7 @@ public class UserLogin extends HttpServlet {
 		rd.forward(request, response);
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		LoginDao loginDao = new LoginDao();
@@ -47,7 +44,7 @@ public class UserLogin extends HttpServlet {
 			System.out.println(u);
 		} else {
 			request.setAttribute("text", "Successful login");
-			RequestDispatcher rd = request.getRequestDispatcher("Home.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("uflist");
 			System.out.println("User Logged In Successfully");
 			rd.forward(request, response);
 			System.out.println(u);

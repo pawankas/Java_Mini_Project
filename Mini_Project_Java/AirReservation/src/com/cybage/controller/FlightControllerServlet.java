@@ -53,6 +53,9 @@ public class FlightControllerServlet extends HttpServlet {
                 case "/update":
                     updateFlight(request, response);
                     break;
+                case "/uflist":
+                	userFlightList(request, response);
+                    break;
                 default:
                 	FlightList(request, response);
                     break;
@@ -69,6 +72,14 @@ public class FlightControllerServlet extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("FlightList.jsp");
         dispatcher.forward(request, response);
     }
+    private void userFlightList(HttpServletRequest request, HttpServletResponse response)
+    	    throws SQLException, IOException, ServletException {
+    	        List < Flight > FlightList = flightDao.selectAllFlights();
+    	        request.setAttribute("FlightList",FlightList);        
+    	        RequestDispatcher dispatcher = request.getRequestDispatcher("userHome.jsp");
+    	        dispatcher.forward(request, response);
+    	    }
+
 
     private void showNewForm(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {

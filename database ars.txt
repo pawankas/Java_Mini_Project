@@ -1,5 +1,20 @@
 Drop table flight;
 
+CREATE TABLE `flight_reservation`.`user` (
+  `pid` INT NOT NULL AUTO_INCREMENT,
+  `fname` VARCHAR(45) NOT NULL,
+  `lname` VARCHAR(45) NOT NULL,
+  `gender` VARCHAR(45) NOT NULL,
+  `age` INT NOT NULL,
+  `contactNo` VARCHAR(45) NOT NULL,
+  `address` VARCHAR(45) NOT NULL,
+  `emailid` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`pid`),
+  UNIQUE INDEX `pid_UNIQUE` (`pid` ASC) VISIBLE);
+
+
+
 CREATE TABLE `airlinereservationsystem`.`flight` (
   `flightId` INT NOT NULL AUTO_INCREMENT,
   `flightName` VARCHAR(45) NOT NULL,
@@ -14,20 +29,28 @@ CREATE TABLE `airlinereservationsystem`.`flight` (
   UNIQUE INDEX `flightId_UNIQUE` (`flightId` ASC) VISIBLE);
   
   
-  User u = loginDao.getUser(emailid, password);
-		if (u == null) {
-			request.setAttribute("text", "Unsuccessful login");
-			RequestDispatcher rd = request.getRequestDispatcher("loginuser.jsp");
-			System.out.println("Error Login in");
-		} else if (u.getEmailid().equals("harshad@gmail.com") && u.getPassword().equals("1234")) {
-			request.setAttribute("text", "Successful login");
-			RequestDispatcher rd = request.getRequestDispatcher("Home.jsp");
-			System.out.println("Admin Logged In Successfully");
-			rd.forward(request, response);
-		} else  {
-			request.setAttribute("text", "Successful login");
-			RequestDispatcher rd = request.getRequestDispatcher("list");
-			System.out.println("User Logged In Successfully");
-			rd.forward(request, response);
+ booking Table
+
+CREATE TABLE `airlinereservationsystem`.`booking` (
+  `bookingid` INT NOT NULL AUTO_INCREMENT,
+  `pid` INT NOT NULL,
+  `flight` INT NOT NULL,
+  `date` VARCHAR(45) NOT NULL,
+  `time` VARCHAR(45) NOT NULL,
+  `b_price` DOUBLE NOT NULL,
+  PRIMARY KEY (`bookingid`),
+  UNIQUE INDEX `bookingid_UNIQUE` (`bookingid` ASC) VISIBLE,
+  INDEX `fk_pid_idx` (`pid` ASC) VISIBLE,
+  INDEX `fk_flightid_idx` (`flight` ASC) VISIBLE,
+  CONSTRAINT `fk_pid`
+    FOREIGN KEY (`pid`)
+    REFERENCES `airlinereservationsystem`.`user` (`pid`)
+    ON DELETE NO ACTION
+    ON UPDATE CASCADE,
+  CONSTRAINT `fk_flightid`
+    FOREIGN KEY (`flight`)
+    REFERENCES `airlinereservationsystem`.`flight` (`flightId`)
+    ON DELETE NO ACTION
+    ON UPDATE CASCADE);
 
 

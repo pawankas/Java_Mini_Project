@@ -15,13 +15,13 @@
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item"><a class="nav-link active"
-					aria-current="page" href="/AirlineReservationSystem"><i
+					aria-current="page" href="index.jsp"><i
 						class="fas fa-home text-primary"></i>&nbsp;Home</a></li>
 				<li class="nav-item"><a class="nav-link text-white" href="flight"><i
 						class="fas fa-plane text-info"></i>&nbsp;Flight</a></li>
 
 				<li class="nav-item"><a class="nav-link text-white"
-					href="registration.jsp"><i class="fas fa-sign-in-alt"
+					href="registeruser.jsp"><i class="fas fa-sign-in-alt"
 						style="color: #70ffff;"></i>&nbsp;Login</a></li>
 
 				<%
