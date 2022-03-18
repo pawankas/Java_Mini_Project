@@ -150,6 +150,35 @@
 				</div>
 			</div>
 			
+			<div class="col">
+				<div class="p-1 border bg-light">
+					<form method="post" action="SearchBySourceAndDestination">
+						<table border="0" width="300" align="center">
+							<tr>
+								<td colspan=2 style="font-size: 12pt;" align="center">
+									<h3>Search for Flight</h3>
+								</td>
+							</tr>
+							<tr>
+								<tr>
+								<td><b>Source and Destination</b></td>
+							</tr>
+								<td>: <input type="text" name="source" id="source">
+								</td>
+							</tr>
+							</tr>
+								<td>: <input type="text" name="destination" id="destination">
+								</td>
+							</tr>
+							<tr>
+								<td colspan=2 align="center"><input type="submit"
+									value="Search"></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+			
 		</div>
 	</div>
 

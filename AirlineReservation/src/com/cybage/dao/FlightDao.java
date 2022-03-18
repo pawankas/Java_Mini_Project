@@ -349,6 +349,50 @@ public class FlightDao {
 		}
 		return null;
 	}
+	
+	public List<Flight> searchFlightBySourceAndDestination(String source, String destination) {
+		Connection conn = null;
+		Statement st = null;
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
+			conn = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
+			System.out.println("connected!.....");
+			System.out.println(source+"===>"+destination);
+			ArrayList al = null;
+			ArrayList flightList = new ArrayList<>();
+			String query = "select * from flight";
+			if (source != null && !source.equals("") && destination != null && !destination.equals("") ) {
+//				query = "select * from flight where source='" + source + "' ";
+				query = "SELECT * "
+						+ "  FROM flight"
+						+ " WHERE source = '"+source+"' AND destination = '"+destination+"'";
+			}
+			System.out.println("query " + query);
+			st = conn.createStatement();
+			ResultSet rs = st.executeQuery(query);
+
+			while (rs.next()) {
+				al = new ArrayList();
+				al.add(rs.getString(1));
+				al.add(rs.getString(2));
+				al.add(rs.getString(3));
+				al.add(rs.getString(4));
+				al.add(rs.getString(5));
+				al.add(rs.getString(6));
+				al.add(rs.getString(7));
+				al.add(rs.getString(8));
+				al.add(rs.getString(9));
+				System.out.println("al :: " + al);
+				flightList.add(al);
+			}
+			return flightList;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	
 
 	private void printSQLException(SQLException ex) {
 		for (Throwable e : ex) {

@@ -75,6 +75,9 @@ public class FlightControllerServlet extends HttpServlet {
 			case "/SearchByDate":
 				searchFlightByDate(request, response);
 				break;
+			case "/SearchBySourceAndDestination":
+				searchFlightBySourceAndDestination(request, response);
+				break;
 			default:
 				FlightList(request, response);
 				break;
@@ -173,6 +176,17 @@ public class FlightControllerServlet extends HttpServlet {
 	public void searchFlightByDestination(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		response.setContentType("text/html");
 			PrintWriter out = response.getWriter();
+			String destination = request.getParameter("destination");
+			List<Flight> flightList = flightDao.searchFlightByDestination(destination);
+			request.setAttribute("flightList", flightList);
+			RequestDispatcher view = request.getRequestDispatcher("SearchView.jsp");
+			view.forward(request, response);
+	}
+	
+	public void searchFlightBySourceAndDestination(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+		response.setContentType("text/html");
+			PrintWriter out = response.getWriter();
+			String source = request.getParameter("source");
 			String destination = request.getParameter("destination");
 			List<Flight> flightList = flightDao.searchFlightByDestination(destination);
 			request.setAttribute("flightList", flightList);
