@@ -75,7 +75,7 @@
 					</form>
 				</div>
 			</div>
-	<!-- 		<div class="col">
+			<div class="col">
 				<div class="p-1 border bg-light">
 					<form method="post" action="SearchBySource">
 						<table border="0" width="300" align="center">
@@ -98,9 +98,9 @@
 						</table>
 					</form>
 				</div>
-			</div> -->
+			</div>
 			
-<!-- 			<div class="col">
+			<div class="col">
 				<div class="p-1 border bg-light">
 					<form method="post" action="SearchByDestination">
 						<table border="0" width="300" align="center">
@@ -123,7 +123,7 @@
 						</table>
 					</form>
 				</div>
-			</div> -->
+			</div>
 			
 			<div class="col">
 				<div class="p-1 border bg-light">

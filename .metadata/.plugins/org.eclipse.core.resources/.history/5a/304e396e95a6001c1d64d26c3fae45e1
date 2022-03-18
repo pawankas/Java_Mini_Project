@@ -163,15 +163,15 @@ public class FlightControllerServlet extends HttpServlet {
 			view.forward(request, response);
 	}
 	
-//	public void searchFlightBySource(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-//		response.setContentType("text/html");
-//			PrintWriter out = response.getWriter();
-//			String source = request.getParameter("source");
-//			List<Flight> flightList = flightDao.searchFlightBySource(source);
-//			request.setAttribute("flightList", flightList);
-//			RequestDispatcher view = request.getRequestDispatcher("SearchView.jsp");
-//			view.forward(request, response);
-//	}
+	public void searchFlightBySource(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+		response.setContentType("text/html");
+			PrintWriter out = response.getWriter();
+			String source = request.getParameter("source");
+			List<Flight> flightList = flightDao.searchFlightBySource(source);
+			request.setAttribute("flightList", flightList);
+			RequestDispatcher view = request.getRequestDispatcher("SearchView.jsp");
+			view.forward(request, response);
+	}
 	
 //	public void searchFlightByDestination(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 //		response.setContentType("text/html");
@@ -183,16 +183,16 @@ public class FlightControllerServlet extends HttpServlet {
 //			view.forward(request, response);
 //	}
 	
-	public void searchFlightBySourceAndDestination(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-		response.setContentType("text/html");
-			PrintWriter out = response.getWriter();
-			String source = request.getParameter("source");
-			String destination = request.getParameter("destination");
-			List<Flight> flightList = flightDao.searchFlightBySourceAndDestination(source , destination);
-			request.setAttribute("flightList", flightList);
-			RequestDispatcher view = request.getRequestDispatcher("SearchView.jsp");
-			view.forward(request, response);
-	}
+//	public void searchFlightBySourceAndDestination(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+//		response.setContentType("text/html");
+//			PrintWriter out = response.getWriter();
+//			String source = request.getParameter("source");
+//			String destination = request.getParameter("destination");
+//			List<Flight> flightList = flightDao.searchFlightByDestination(destination);
+//			request.setAttribute("flightList", flightList);
+//			RequestDispatcher view = request.getRequestDispatcher("SearchView.jsp");
+//			view.forward(request, response);
+//	}
 	
 	public void searchFlightByDate(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		response.setContentType("text/html");
