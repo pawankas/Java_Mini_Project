@@ -19,8 +19,7 @@
 	<center>
 		<h1>Flight Management</h1>
 		<h2>
-			<a href="new">Add New Flight</a> &nbsp;&nbsp;&nbsp; <a
-				href="search.jsp">Search Flight</a>
+			<a href="new">Add New Flight</a> &nbsp;&nbsp;&nbsp;
 
 		</h2>
 	</center>
@@ -33,7 +32,7 @@
 						<table border="0" width="300" align="center">
 							<tr>
 								<td colspan=2 style="font-size: 12pt;" align="center">
-									<h3>Search for Flight</h3>
+									
 								</td>
 							</tr>
 							<tr>
@@ -57,7 +56,7 @@
 						<table border="0" width="300" align="center">
 							<tr>
 								<td colspan=2 style="font-size: 12pt;" align="center">
-									<h3>Search for Flight</h3>
+									
 								</td>
 							</tr>
 							<tr>
@@ -81,7 +80,7 @@
 						<table border="0" width="300" align="center">
 							<tr>
 								<td colspan=2 style="font-size: 12pt;" align="center">
-									<h3>Search for Flight</h3>
+									
 								</td>
 							</tr>
 							<tr>
@@ -106,7 +105,7 @@
 						<table border="0" width="300" align="center">
 							<tr>
 								<td colspan=2 style="font-size: 12pt;" align="center">
-									<h3>Search for Flight</h3>
+									
 								</td>
 							</tr>
 							<tr>
@@ -131,7 +130,7 @@
 						<table border="0" width="300" align="center">
 							<tr>
 								<td colspan=2 style="font-size: 12pt;" align="center">
-									<h3>Search for Flight</h3>
+									
 								</td>
 							</tr>
 							<tr>
@@ -156,15 +155,18 @@
 						<table border="0" width="300" align="center">
 							<tr>
 								<td colspan=2 style="font-size: 12pt;" align="center">
-									<h3>Search for Flight</h3>
+								
 								</td>
 							</tr>
 							<tr>
 								<tr>
-								<td><b>Source and Destination</b></td>
+								<td><b>Source</b></td>
 							</tr>
 								<td>: <input type="text" name="source" id="source">
 								</td>
+							</tr>
+							<tr>
+								<td><b>Destination</b></td>
 							</tr>
 							</tr>
 								<td>: <input type="text" name="destination" id="destination">

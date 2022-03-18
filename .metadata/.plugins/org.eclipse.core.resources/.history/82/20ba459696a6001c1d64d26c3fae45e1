@@ -19,7 +19,8 @@
 	<center>
 		<h1>Flight Management</h1>
 		<h2>
-			<a href="new">Add New Flight</a> &nbsp;&nbsp;&nbsp;
+			<a href="new">Add New Flight</a> &nbsp;&nbsp;&nbsp; <a
+				href="search.jsp">Search Flight</a>
 
 		</h2>
 	</center>
@@ -32,14 +33,14 @@
 						<table border="0" width="300" align="center">
 							<tr>
 								<td colspan=2 style="font-size: 12pt;" align="center">
-									
+									<h3>Search for Flight</h3>
 								</td>
 							</tr>
 							<tr>
 								<td><b>Departure Time</b></td>
 							</tr>
 							<tr>
-							<td>: <input type="text" name="time" id="time">
+								<td>: <input type="text" name="time" id="time">
 								</td>
 							</tr>
 							<tr>
@@ -56,15 +57,15 @@
 						<table border="0" width="300" align="center">
 							<tr>
 								<td colspan=2 style="font-size: 12pt;" align="center">
-									
+									<h3>Search for Flight</h3>
 								</td>
 							</tr>
 							<tr>
-								<tr>
+							<tr>
 								<td><b>Flight Name</b></td>
 							</tr>
-								<td>: <input type="text" name="flightName" id="flightName">
-								</td>
+							<td>: <input type="text" name="flightName" id="flightName">
+							</td>
 							</tr>
 							<tr>
 								<td colspan=2 align="center"><input type="submit"
@@ -74,13 +75,13 @@
 					</form>
 				</div>
 			</div>
-	<!-- 		<div class="col">
+			<!-- 		<div class="col">
 				<div class="p-1 border bg-light">
 					<form method="post" action="SearchBySource">
 						<table border="0" width="300" align="center">
 							<tr>
 								<td colspan=2 style="font-size: 12pt;" align="center">
-									
+									<h3>Search for Flight</h3>
 								</td>
 							</tr>
 							<tr>
@@ -98,14 +99,14 @@
 					</form>
 				</div>
 			</div> -->
-			
-<!-- 			<div class="col">
+
+			<!-- 			<div class="col">
 				<div class="p-1 border bg-light">
 					<form method="post" action="SearchByDestination">
 						<table border="0" width="300" align="center">
 							<tr>
 								<td colspan=2 style="font-size: 12pt;" align="center">
-									
+									<h3>Search for Flight</h3>
 								</td>
 							</tr>
 							<tr>
@@ -123,22 +124,22 @@
 					</form>
 				</div>
 			</div> -->
-			
+
 			<div class="col">
 				<div class="p-1 border bg-light">
 					<form method="post" action="SearchByDate">
 						<table border="0" width="300" align="center">
 							<tr>
 								<td colspan=2 style="font-size: 12pt;" align="center">
-									
+									<h3>Search for Flight</h3>
 								</td>
 							</tr>
 							<tr>
-								<tr>
+							<tr>
 								<td><b>Date of Departure</b></td>
 							</tr>
-								<td>: <input type="text" name="date" id="date">
-								</td>
+							<td>: <input type="text" name="date" id="date">
+							</td>
 							</tr>
 							<tr>
 								<td colspan=2 align="center"><input type="submit"
@@ -148,29 +149,29 @@
 					</form>
 				</div>
 			</div>
-			
+
 			<div class="col">
 				<div class="p-1 border bg-light">
 					<form method="post" action="SearchBySourceAndDestination">
 						<table border="0" width="300" align="center">
 							<tr>
 								<td colspan=2 style="font-size: 12pt;" align="center">
-								
+									<h3>Search for Flight</h3>
 								</td>
 							</tr>
 							<tr>
-								<tr>
+							<tr>
 								<td><b>Source</b></td>
 							</tr>
-								<td>: <input type="text" name="source" id="source">
-								</td>
+							<td>: <input type="text" name="source" id="source">
+							</td>
 							</tr>
 							<tr>
 								<td><b>Destination</b></td>
 							</tr>
 							</tr>
-								<td>: <input type="text" name="destination" id="destination">
-								</td>
+							<td>: <input type="text" name="destination" id="destination">
+							</td>
 							</tr>
 							<tr>
 								<td colspan=2 align="center"><input type="submit"
@@ -180,7 +181,7 @@
 					</form>
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
 
