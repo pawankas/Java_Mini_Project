@@ -1,0 +1,26 @@
+CREATE TABLE `flight_reservation`.`user` (
+  `pid` INT NOT NULL AUTO_INCREMENT,
+  `fname` VARCHAR(45) NOT NULL,
+  `lname` VARCHAR(45) NOT NULL,
+  `gender` VARCHAR(45) NOT NULL,
+  `age` INT NOT NULL,
+  `contactNo` VARCHAR(45) NOT NULL,
+  `address` VARCHAR(45) NOT NULL,
+  `emailid` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`pid`),
+  UNIQUE INDEX `pid_UNIQUE` (`pid` ASC) VISIBLE);
+
+CREATE TABLE `flight_reservation`.`flight` (
+  `filghtid` INT NOT NULL AUTO_INCREMENT,
+  `flightName` VARCHAR(45) NOT NULL,
+  `flightNumber` VARCHAR(45) NOT NULL,
+`source` VARCHAR(45) NOT NULL,
+  `destination` VARCHAR(45) NOT NULL,
+  `noOfStops` VARCHAR(45) NOT NULL,
+`date` DATETIME NOT NULL,
+`time` DATETIME NOT NULL,
+`class` VARCHAR(45) NOT NULL,
+`price` DOUBLE NOT NULL,
+  PRIMARY KEY (`filghtid`),
+  UNIQUE INDEX `filghtid_UNIQUE` (`filghtid` ASC) VISIBLE);
